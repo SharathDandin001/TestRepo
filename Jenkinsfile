@@ -3,7 +3,7 @@ agent any
 stages {
 stage ('Build') {
 steps {
- echo 'Hii'
+ sh 'mvn -B -DskipTests clean package'
 }
 }
 }
